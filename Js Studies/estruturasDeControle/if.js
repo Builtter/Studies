@@ -68,4 +68,36 @@ imprimirResultado(8);
 imprimirResultado(7.1);
 imprimirResultado(6.99999);
 
+console.log("------------ controle 6' ------------");
+
+Number.prototype.entre = function (nota1, nota2) {
+    return this >= nota1 && this <= nota2;
+}
+
+const imprimeResultado = function (nota) {
+    if (nota.entre(9, 10)) {
+        console.log("Boa nota, quadro de honra TOP 1 !!");
+    } else if (nota.entre(8, 9)) {
+        console.log("Boa nota, quadro de honra TOP 2 !!");
+    } else if (nota.entre(7, 8)) {
+        console.log("Nota na media, Não foi mal mas não tão ruim !!");
+    } else if (nota.entre(6, 7)) {
+        console.log("Nota ruim, foi mal, melhore!! FON");
+    } else if (nota.entre(5, 6)) {
+        console.log("Nota na péssima, estude senão vai reprovar !!");
+    } else if (nota.entre(4, 5)) {
+        console.log("Nota na péssima, estude senão vai reprovar !!");
+    } else if (nota.entre(2, 3)) {
+        console.log("Nota na péssima, estude senão vai reprovar !!");
+    } else if (nota.entre(1, 2)) {
+        console.log("Nota na péssima, estude senão vai reprovar !!");
+    } else if (nota.entre(0, 1)) {
+        console.log("Nota na péssima, estude senão vai reprovar !!");
+    } else {
+        console.log("Nova inválida, verifique os valores");
+    }
+    console.log("Fim")
+}
+
+imprimeResultado(6.5);
 
