@@ -1,0 +1,7 @@
+Import DB
+
+https://ajuda.hostnet.com.br/exportacao-do-banco-via-mysql-workbench/
+
+
+iniciando banco
+MSservice.exe → cmd
