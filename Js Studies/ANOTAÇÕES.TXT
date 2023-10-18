@@ -1,0 +1,3 @@
+Tomar nota para estudos
+
+https://devdocs.io/javascript/
