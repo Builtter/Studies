@@ -65,3 +65,118 @@ body {
     padding-right: 20px;
     font-size: 1.2rem;
 }
+
+.modulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.modulo {
+    flex-basis: 30%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.modulo h3 {
+    margin: 0px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    background-color: rgb(71, 27, 112);
+}
+
+.modulo ul {
+    margin: 0px;
+    padding: 10px;
+    list-style: none;
+}
+
+.modulo ul li {
+    padding: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.modulo ul li a {
+    display: flex;
+    text-decoration: none;
+    color: #333;
+}
+
+.modulo ul li:hover {
+    background-color: #EEE;
+}
+
+.modulo.verde {
+    border: 2px solid #29752b;
+}
+
+.modulo.verde>h3 {
+    background-color: #29752b;
+}
+
+.modulo.vermelho {
+    border: 2px solid #531212;
+}
+
+.modulo.vermelho>h3 {
+    background-color: #531212;
+}
+
+.modulo.azul {
+    border: 2px solid #536ec7;
+}
+
+.modulo.azul>h3 {
+    background-color: #536ec7;
+}
+
+.modulo.roxo {
+    border: 2px solid #421d46;
+}
+
+.modulo.roxo>h3 {
+    background-color: #421d46;
+}
+
+.modulo.laranja {
+    border: 2px solid #ad6615;
+}
+
+.modulo.laranja>h3 {
+    background-color: #ad6615;
+}
+
+.modulo.verde-dif {
+    border: 2px solid #123613;
+}
+
+.modulo.verde-dif>h3 {
+    background-color: #123613;
+}
+
+.modulo.azul-claro {
+    border: 2px solid #3d99b4;
+}
+
+.modulo.azul-claro>h3 {
+    background-color: #3d99b4;
+}
+
+.modulo.preto {
+    border: 2px solid #111010;
+}
+
+.modulo.preto>h3 {
+    background-color: #111010;
+}
+
+.modulo.rosa {
+    border: 2px solid #5a0a49;
+}
+
+.modulo.rosa>h3 {
+    background-color: #5a0a49;
+}
