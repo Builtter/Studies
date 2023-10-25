@@ -10,11 +10,10 @@ que ela receba um valor como 0.30000000000000004 e retorne R$0,30 (observe a ví
 
 //Mascara
 
-function converteValorParaReal(moedaLocal){
+function converteValorParaFormatoReal(moedaLocal){
     let dinheiroReal = moedaLocal.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
 
     console.log(`O valor inserido equivale a ${dinheiroReal}`);
 }
 
-converteValorParaReal(0.30000000000000004)
-
+converteValorParaFormatoReal(0.30000000000000004);

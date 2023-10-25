@@ -1,0 +1,3 @@
+crood
+
+O CRUD é uma sigla que representa as quatro operações básicas em um sistema de banco de dados: Create (criar), Read (ler), Update (atualizar) e Delete (excluir). Essas operações são essenciais para qualquer aplicação que lida com dados persistentes.
