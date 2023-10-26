@@ -7,41 +7,40 @@ que os resultados sejam iguais. Caso o delta seja negativo, retorne, ao invés d
 “Delta é negativo”.
 */
 
-
 function calculandoBhaskara(a,b,c){
-
-    function calculaDelta(a,b,c){
-        return (b**2) - 4 * a * c;
-    }
     
-    let delta = (b**2) - 4 * a * c;
+    const delta = (a,b,c) => (b**2) - 4 * a * c;
 
-    if (delta < 0){
+    if (delta(a,b,c) < 0){
 
         return `Delta é negativo`;
 
-    }else if (delta = 0){
+    }else if (delta(a,b,c) === 0){
 
-        let bhasDeltaZero = (- b)/2*a;
-        let segundoGrau = a*(bhasDeltaZero**2) + (b * bhasDeltaZero) + c;
+        let xisDeltaZero = -b/(2*a);
+        let segundoGrau = a*(xisDeltaZero**2) + (b * xisDeltaZero) + c;
 
-        return `Delta = 0, a equação do segundo grau possui uma raiz real
-        Em Bhaskara com delta = 0, X corresponde a ${segundoGrau}`; 
+        return `Delta = 0, o resultado da equação de segundo grau ( ${a}X²${(b)}X+${c} ) com os valores corresponde a ${segundoGrau}`; 
 
     }else{
 
-        let bhasDeltaPositivo = (- b + Math.sqrt(delta))/2*a;
-        let bhasDeltaNegativo = (- b - Math.sqrt(delta))/2*a;
+        let xisDeltaPositivo = (- b + (Math.sqrt(delta(a,b,c))))/2*a;
+        let xisDeltaNegativo = (- b - (Math.sqrt(delta(a,b,c))))/2*a;
 
-        let segundoGrauPos = a * (bhasDeltaPositivo**2) + (b * bhasDeltaPositivo) + c;
-        let segundoGrauNeg = a * (bhasDeltaNegativo**2) + (b * bhasDeltaNegativo) + c;
+        let segundoGrau = a * (xisDeltaPositivo**2) + (b * xisDeltaPositivo) + c;
 
-        return `A equação do segundo grau possui duas raizes reais
-        Em Bhaskara+, X corresponde a ${segundoGrauPos} e em Bhaskara-, X corresponde a ${segundoGrauNeg}`;
+        return `O resultado da equação de segundo grau ( ${a}X²${(b)}X+${c} ) com os valores corresponde a ${segundoGrau}
+X' = ${xisDeltaPositivo} e X'' = ${xisDeltaNegativo}`;
     }
 }
+console.log('---------------')
 
-console.log(calculandoBhaskara(calculaDelta(1,8,-9)));
+console.log(calculandoBhaskara(3,-5,12)) // Delta é negativo
 
-// console.log(calculandoBhaskara(3,-5,12)) // Delta é negativo
-// console.log(calculandoBhaskara(1, 8,-9)) // 
+console.log('---------------')
+
+console.log(calculandoBhaskara(7,3,4)) // Delta = zero → Continuar melhorando
+
+console.log('---------------')
+
+console.log(calculandoBhaskara(1,8,-9)); // Duas Raizes
