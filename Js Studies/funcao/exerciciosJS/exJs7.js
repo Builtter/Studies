@@ -17,10 +17,10 @@ function calculandoBhaskara(a,b,c){
 
     }else if (delta(a,b,c) === 0){
 
-        let xisDeltaZero = -b/(2*a);
+        let xisDeltaZero = -(b)/(2*a);
         let segundoGrau = a*(xisDeltaZero**2) + (b * xisDeltaZero) + c;
 
-        return `Delta = 0, o resultado da equação de segundo grau ( ${a}X²${(b)}X+${c} ) com os valores corresponde a ${segundoGrau}`; 
+        return `Delta = 0, o resultado da equação de segundo grau ( ${a}X²${(b)}X+${c} ) com os valores corresponde a ${segundoGrau} e X = ${xisDeltaZero}`; 
 
     }else{
 
@@ -39,7 +39,7 @@ console.log(calculandoBhaskara(3,-5,12)) // Delta é negativo
 
 console.log('---------------')
 
-console.log(calculandoBhaskara(7,3,4)) // Delta = zero → Continuar melhorando
+console.log(calculandoBhaskara(25,-10,1)) // Delta = zero → Continuar melhorando
 
 console.log('---------------')
 
