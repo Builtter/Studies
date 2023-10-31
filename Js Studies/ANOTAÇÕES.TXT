@@ -1,3 +1,6 @@
 Tomar nota para estudos
 
 https://devdocs.io/javascript/
+
+lista
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/push

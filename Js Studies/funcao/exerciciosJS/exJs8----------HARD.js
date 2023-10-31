@@ -13,11 +13,42 @@ Retorno: [3, 7] (Significa que ele bateu três vezes seu recorde de melhor pontu
 aconteceu no sétimo jogo.)
  */
 
-var dados = {
-    dt_inicial: 1,
-    dt_final: 2
-};
-console.log(dados.dt_inicial);
+let pontuacoes = [];
+pontuacoes.push(10, 20, 20, 8, 25, 3, 0, 30, 1);
 
-https://www.freecodecamp.org/portuguese/news/aprenda-o-basico-de-git-em-menos-de-10-minutos/
-adicionar estudos de GIT
+
+function verificaProgresso(valor){
+
+    let maior = Math.max(valor);
+    let menor = Math.min(valor);
+
+    valor.forEach(item => {
+        if (item > maior){
+            var recorde = recorde++;
+        } else if( item < menor){
+            var pior = pior++;
+        }
+    });
+
+    console.log(`valor de recordes batidos ${recorde} e valor de piores partidas ${pior}`);
+    
+    
+    // for (let i = 0; i < valor.length ; i++){
+        
+    //     if(valor[i] > 0){
+            
+    //         for( let val = 0; val < valor[i].value();val++){
+
+    //         }
+
+    //     };
+        
+        
+    //     console.log(valor[i]);
+
+    // }
+
+}
+
+
+console.log(verificaProgresso(pontuacoes));
