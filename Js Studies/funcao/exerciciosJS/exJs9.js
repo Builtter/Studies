@@ -20,6 +20,6 @@ function validaMedia(nota){
     }
 
     // Numero natural
-    https://www.uel.br/projetos/matessencial/basico/fundamental/naturais2.html#sec01
+    // https://www.uel.br/projetos/matessencial/basico/fundamental/naturais2.html#sec01
 
 };

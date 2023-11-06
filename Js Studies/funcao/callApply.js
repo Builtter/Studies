@@ -26,4 +26,3 @@ console.log('----------')
 //A forma como os parâmetros são passados é o que diferencia call e aplly
 console.log(getPreco.call(carro, 0.17, '$')); // objeto, atributos
 console.log(getPreco.apply(carro, [0.17, '$'])); // objeto, [atributo,atributo]
-

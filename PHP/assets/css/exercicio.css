@@ -18,12 +18,16 @@ body.exercicio{
     background-color: #555;
 }
 
-.navegacao a {
+.navegacao > a {
     text-decoration: none;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     font-weight: 300;
     font-size: 1.3rem;
-    background-color: aqua;
+    background-color: rgb(24, 56, 56);
     padding: 5px 10px;
     margin-right: 10px;
 }
+
+.navegacao > a.verde {border: 2px solid #12533a;}
+
+.navegacao > a.vermelho {background-color: #531212;}
