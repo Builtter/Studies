@@ -17,18 +17,22 @@ let pontuacoes = [];
 pontuacoes.push(10, 20, 20, 8, 25, 3, 0, 30, 1);
 
 
-function verificaProgresso(valor){
+function verificaProgresso(sequencia){
+    
 
-    let maior = Math.max(valor);
-    let menor = Math.min(valor);
+    let maior = Math.max(sequencia);
+    let menor = Math.min(sequencia);
 
-    valor.forEach(item => {
-        if (item > maior){
-            var recorde = recorde++;
-        } else if( item < menor){
-            var pior = pior++;
+    function contador(nota){
+        var maior = 0;
+        var pior = 0;
+
+        if (nota > maior){
+            recorde++;
+        } else if( nota < menor){
+            pior++;
         }
-    });
+    }
 
     console.log(`valor de recordes batidos ${recorde} e valor de piores partidas ${pior}`);
     
