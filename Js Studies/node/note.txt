@@ -1,0 +1,7 @@
+Node - ambiente de execução do javascript dentro do borwser
+
+runtime do javascript, formado por duas partes, pelo:
+V8: interpretador javascript e de codigo aberto do google;
+LibuV: que tata de forma assincrona a parte mais lenta do processo
+
+node: um arquivo representa um modulo
