@@ -13,4 +13,6 @@ axiios.get(url).then(response => {
     //desafio: Selecionar mulher, chinesa, menor salario
     console.log(funcionarios.filter(pais).filter(sexo).reduce(menorSalario));
 
+    // console.log(funcionarios);
+
 })
