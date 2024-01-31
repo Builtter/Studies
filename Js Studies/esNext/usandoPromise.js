@@ -1,4 +1,4 @@
-const { log } = require('console');
+// com promise...
 const http = require('http');
 
 const getTurma = (letra) => { // letra pois como o caminho é o mesmo para ambas turmas, apenas a letra será alterada para o acesso
