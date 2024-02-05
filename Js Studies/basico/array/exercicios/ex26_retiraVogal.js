@@ -7,7 +7,7 @@ function retiraVogal(palavra) {
 }
 
 console.log(retiraVogal('ITALO'));
-console.log(retiraVogal('Palavra')); //Por que essa não vai?
+console.log(retiraVogal('Palavra')); //Por que essa não vai? será que pega a primeira ocorrência?? (true) # DEBUG to understand
 console.log(retiraVogal('Fundamentos'));
 
 //modo 2
