@@ -25,4 +25,5 @@ var arr2 = ["abra", "cadabra"];
 filtraQtDigitos(arr1, 4)
 filtraQtDigitos2(arr2, 4)
 
-//obs.: Numeros não possuem tamanho metrificado por length, converta em string e depois utilize .length para tal
+//obs.: Numeros não possuem tamanho metrificado por length, 
+//converta em string e depois utilize .length para tal
