@@ -1,7 +1,12 @@
-s = 0
-for i in range(5):
-    s += 3 * i
-print(s)
+a = 0
 
-# 0 1 2 3 4
-# 0 3 6 9 12
+for i in range(30):
+    if a % 2 == 0:
+        a += 1
+        continue
+    elif (a % 5 == 0):
+            break
+    else:
+        a += 3
+
+print(a)
