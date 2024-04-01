@@ -1,12 +1,21 @@
-a = 0
+class ContaBancaria:
+    num_contas = 0
+    def __init__(self, clientes, numero, saldo):
+        self.agencia = agencia
+        self.numero = numero
+        self.saldo = saldo
+        ContaBancaria.num_contas += 1
 
-for i in range(30):
-    if a % 2 == 0:
-        a += 1
-        continue
-    elif (a % 5 == 0):
-            break
-    else:
-        a += 3
+    def __del(self):
+        ContaBancaria.num_contas -= 1
 
-print(a)
+    def depositar(self, valor):
+        self.saldo = self.valor + valor
+
+
+    def sacar(self, valor):
+        self.saldo = self.valor - valor
+
+
+    def consultarSaldo(Self):
+        return self.saldo
