@@ -1,0 +1,3 @@
+Iai meu parça, conseguiu ler o arquivo usando promise, congrats
+fon
+linha 3
