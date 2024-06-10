@@ -1,0 +1,3 @@
+let's encrypt → autoridade certificadora gratuita, com ela você consegue ativar o https em seu servidor de forma gratuita (lindo)
+certbot
+
