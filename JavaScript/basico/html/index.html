@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercícios HTML</title>
+    <style>
+        #conteudo {
+            padding: 30px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Exercícios HTML</h1>
+    </header>
+    <nav>
+        <a href="#" attr-prop="exercicios/teste.html">00 - Teste</a> |
+        <a href="#" attr-prop="exercicios/texto1.html">01 - Texto 1</a> |
+        <a href="#" attr-prop="exercicios/texto2.html">02 - Texto 2</a> |
+        <a href="#" attr-prop="exercicios/listas.html">03 - Listas</a> |
+        <a href="#" attr-prop="exercicios/listaAninhada.html">04 - Listas</a> |
+        <a href="#" attr-prop="exercicios/links.html">05 - Links</a> |
+        <a href="#" attr-prop="exercicios/tabela.html">06 - Tabela</a> |
+        <a href="#" attr-prop="exercicios/form/form.html">07 - Formulário</a> |
+    </nav>
+    <section id="conteudo"></section>
+    <footer>
+        Web M
+    </footer>
+    <script>
+        document.querySelectorAll('[attr-prop]').forEach(link => {
+            const conteudo = document.getElementById('conteudo');
+            link.onclick = function (e) {
+                e.preventDefault(); // Impede o comportamento padrão do link
+                fetch(link.getAttribute('attr-prop')) // Faz a solicitação fetch
+                    .then(resp => resp.text()) // Extrai o texto (HTML) da resposta
+                    .then(html => conteudo.innerHTML = html) // Insere o HTML no elemento conteudo
+                    .catch(error => console.error('Erro ao carregar o conteúdo:', error)); // Captura e exibe erros
+            };
+        });
+    </script>
+</body>
+
+</html>
