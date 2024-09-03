@@ -1,0 +1,27 @@
+
+Aqui está uma breve explicação do que cada uma dessas bibliotecas C faz:
+
+#include <stdio.h> (Standard Input Output):
+Essa biblioteca é usada para operações básicas de entrada e saída, como ler dados do teclado (scanf), imprimir dados na tela (printf), manipular arquivos (fopen, fclose, fread, fwrite), e outras funções relacionadas a entrada e saída.
+
+#include <stdlib.h> (Standard Library):
+Esta biblioteca oferece várias funções utilitárias, incluindo:
+
+Alocação de memória dinâmica (malloc, calloc, realloc, free).
+Controle de execução do programa (exit, system).
+Conversão de tipos (atoi, atof, strtol).
+Gerenciamento de números aleatórios (rand, srand).
+#include <string.h> (String Library):
+Contém funções para manipulação de strings e arrays de caracteres, como:
+
+Cópia de strings (strcpy, strncpy).
+Comparação de strings (strcmp, strncmp).
+Concatenação de strings (strcat, strncat).
+Busca e manipulação de caracteres dentro de strings (strchr, strrchr, strstr).
+Funções para medir o comprimento de strings (strlen).
+#include <locale.h> (Localization):
+Usada para definir e manipular as configurações regionais e de localidade do programa, como:
+
+Configuração de formatos regionais de números, moedas, datas, e outros (setlocale).
+Ajuste do comportamento de algumas funções de acordo com a localidade definida.
+Essas bibliotecas são essenciais para tarefas comuns de programação em C, como manipulação de entradas/saídas, gerenciamento de memória, e operações com strings e localizações específicas.
