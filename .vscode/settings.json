@@ -3,6 +3,15 @@
     "C_Cpp.default.compilerPath": "C:\\MinGW\\bin\\gcc.exe",
     "files.associations": {
         "strAninhada.C": "cpp",
-        "aninhadaAluno.C": "cpp"
+        "aninhadaAluno.C": "cpp",
+        "tema3Programa5.C": "cpp",
+        "tema3Programa6.C": "cpp",
+        "tema3Programa7.C": "cpp",
+        "temo3Programa8.C": "cpp",
+        "tema3Programa9.C": "cpp",
+        "tema3Programa10.C": "cpp",
+        "tema3Programa11.C": "cpp",
+        "tema3Programa12.C": "cpp",
+        "tema3Programa13.C": "cpp"
     }
 }

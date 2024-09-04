@@ -25,3 +25,17 @@ Usada para definir e manipular as configurações regionais e de localidade do p
 Configuração de formatos regionais de números, moedas, datas, e outros (setlocale).
 Ajuste do comportamento de algumas funções de acordo com a localidade definida.
 Essas bibliotecas são essenciais para tarefas comuns de programação em C, como manipulação de entradas/saídas, gerenciamento de memória, e operações com strings e localizações específicas.
+
+---------------------------------------------------------
+operador &
+No printf, você não deve usar o operador & ao passar variáveis do tipo primitivo (como int, float, etc.) para imprimir seus valores. O operador & é usado para obter o endereço de memória de uma variável, e printf espera o valor da variável para exibir, não o endereço.
+
+Explicação Detalhada:
+printf Espera o Valor:
+
+A função printf usa especificadores de formato, como %d, %f, etc., para imprimir os valores das variáveis.
+Quando você usa %d, está pedindo ao printf para exibir um valor do tipo int.
+Uso do & e o Endereço de Memória:
+
+O operador & é usado para obter o endereço de uma variável.
+Isso é útil quando você quer, por exemplo, passar uma variável para uma função que espera um ponteiro, como scanf, que precisa de um ponteiro para armazenar o valor digitado pelo usuário na variável.
