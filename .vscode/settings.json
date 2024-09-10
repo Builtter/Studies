@@ -12,6 +12,20 @@
         "tema3Programa10.C": "cpp",
         "tema3Programa11.C": "cpp",
         "tema3Programa12.C": "cpp",
-        "tema3Programa13.C": "cpp"
+        "tema3Programa13.C": "cpp",
+        "buscaBinaria.C": "cpp",
+        "funcEmpilhamento.C": "cpp",
+        "funcDesempilhamento.C": "cpp",
+        "funcEnfileirar.C": "cpp",
+        "funcDesenfileirar.C": "cpp",
+        "ordenaPorDistribuição.C": "cpp",
+        "bolha.C": "cpp",
+        "selecao.C": "cpp",
+        "insertion.C": "cpp",
+        "algoritmoOrdenacao.C": "cpp",
+        "bolhaAlgoritmoOrdenacao.C": "cpp",
+        "arvore.C": "cpp",
+        "alturaArvoreBinaria.C": "cpp",
+        "buscaEmUmaABB.C": "cpp"
     }
 }
