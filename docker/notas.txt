@@ -1,0 +1,8 @@
+Instalação do docker
+
+WSL → Windows Subsystem for Linux
+link: https://learn.microsoft.com/pt-br/windows/wsl/install
+
+Executar o terminal do windows como ADM
+
+wsl --install
