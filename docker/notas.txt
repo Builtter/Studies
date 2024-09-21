@@ -6,3 +6,28 @@ link: https://learn.microsoft.com/pt-br/windows/wsl/install
 Executar o terminal do windows como ADM
 
 wsl --install
+
+link com passo a passo para instalação do docker
+https://docs.docker.com/engine/install/ubuntu/
+
+importante verificar o passo a passo da documentação pois sempre serão atualizados
+
+configurando para docker iniciar assim que o ubuntu for inicializado
+ sudo systemctl enable docker.service
+ sudo systemctl enable containerd.service
+
+para retirar essa configuração basta aplicar os seguintes comandos 
+ sudo systemctl disable docker.service
+ sudo systemctl disable containerd.service
+
+caso tenha problemas de permissões com o docker
+$ sudo groupadd docker - Cria um grupo docker
+$ sudo usermod -aG docker $USER - adiciona seu usuário a esse grupo
+$ newgrp docker - acessa esse grupo
+
+feito isso teste novamente!
+
+para apagar algum container basta usar o seguinte comandos
+docker rm 4eb8  -  4eb8 diz respeito aos 4 primeiros digitos do ID do container que deseja excluir
+
+docker rmi docker rmi hello-world:latest - onde hello-world é o nome do docker e latest a tag
