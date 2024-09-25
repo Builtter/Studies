@@ -17,8 +17,9 @@
     </header>
 
     <nav class="navegacao">
-        <a href="teste/teste.php" class="verde"> Sem Formatação</a>
-        <a href="index.php" class="vermelho"> Voltar</a>
+    <a href=<?= "/{$_GET['dir']}/{$_GET['file']}.php" ?> 
+            class="verde">Sem formatação</a>
+        <a href="index.php" class="vermelho">Voltar</a>
     </nav>
 
     <main class="principal">
@@ -28,7 +29,8 @@
                 // include($_GET['dir'] . "/" . $_GET['file'] . "teste.php"); //não funfou
                 // include("{$_GET['dir']}/{$_GET['file']}.php");//não funfou tmb
                 // include(__DIR__ . "/{$_GET['dir']}/{$_GET['file']}.php");//não tmb
-                include('teste/teste.php'); // funfa
+                // include('teste/teste.php'); // funfa
+                include(__DIR__ . "/{$_GET['dir']}/{$_GET['file']}.php");
             ?>
 
         </div>
