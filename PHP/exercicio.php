@@ -24,9 +24,12 @@
     <main class="principal">
         <div class="conteudo">
 
-
-
-
+            <?php
+                // include($_GET['dir'] . "/" . $_GET['file'] . "teste.php"); //não funfou
+                // include("{$_GET['dir']}/{$_GET['file']}.php");//não funfou tmb
+                // include(__DIR__ . "/{$_GET['dir']}/{$_GET['file']}.php");//não tmb
+                include('teste/teste.php'); // funfa
+            ?>
 
         </div>
     </main>
