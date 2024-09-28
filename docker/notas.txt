@@ -1,3 +1,6 @@
+Link das aulas de docker:
+https://www.youtube.com/watch?v=_msjG0Mvzvk&list=PLViOsriojeLrdw5VByn96gphHFxqH3O_N&index=16
+
 Instalação do docker
 
 WSL → Windows Subsystem for Linux
