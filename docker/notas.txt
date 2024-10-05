@@ -54,6 +54,7 @@ docker pause upbeat_euler: pausa o container do nome indormado
 docker unpause upbeat_euler: despausa o container com base no nome
 docker stop upbeat_euler: sai do container, parando ele também
 docker start -ai
+docker port: mostra as portas mapeadas do container caso tenha
 
 OBS.: Caso o terminal trave, digite CTRL + Q e CTRL + P.
 
@@ -62,9 +63,24 @@ FLAGS:
 -i: interactive mode. Isso permite que você interaja com o contêiner, mantendo a entrada padrão aberta.
 -t: tty. Isso aloca um terminal virtual, permitindo uma interface mais interativa, como se você estivesse usando um terminal real.
 -a: all. mostra todos os containers -> docker ps -a mostra todos os containers mas caso não use o -a, será mostrado somente os containers em execução
+-P: docker irá Expor todas as portas especificadas no Dockerfile com a instrução EXPOSE para a máquina host. Atribuir aleatoriamente uma porta disponível do host para cada porta exposta do contêiner.
+-p: realiza o procedimenot da flag -P mas manualmente você indicará para qual porta o container apontará. ex: docker run -p 5000:80 -d dockersamples/static-site
+
+OPERADORES:
+| -> O operador pipe (|) é utilizado para redirecionar a saída do comando anterior como entrada para o próximo comando.
 
 pause: congela o container, todos os processos que estão rodando nele serão antido e parados
 stop: reinicia o container junto com todos os processos, não havendo mais após o stpo
 
 sudo service docker status: verifica os status do docker e serviços antes de iniciar
 caso não esteja rodando, usar o -> sudo service docker start
+
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+configurações de rede do docker
+dockersamples/static-site container do docker naão oficial
+
+configurando portas de rede do docker, container acima utiliza a porta 80
+
+
+CONTINUAR NA AULA 18 8:19
+https://youtu.be/IBlAvnh-hts?list=PLViOsriojeLrdw5VByn96gphHFxqH3O_N
