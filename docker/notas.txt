@@ -1,3 +1,6 @@
+Link das aulas de docker:
+https://www.youtube.com/watch?v=_msjG0Mvzvk&list=PLViOsriojeLrdw5VByn96gphHFxqH3O_N&index=16
+
 Instalação do docker
 
 WSL → Windows Subsystem for Linux
@@ -31,3 +34,53 @@ para apagar algum container basta usar o seguinte comandos
 docker rm 4eb8  -  4eb8 diz respeito aos 4 primeiros digitos do ID do container que deseja excluir
 
 docker rmi docker rmi hello-world:latest - onde hello-world é o nome do docker e latest a tag
+
+comados de docker:
+
+docker run é usado para criar e iniciar um container. Por exemplo, docker run hello-world
+docker pull ubuntu baixa a imagem mais recente do Ubuntu.
+docker ps lista todos os containers em execução.
+parar um container em execução, usa-se docker stop, seguido do ID ou nome do container.
+docker rm remove um ou mais containers. É importante garantir que o container esteja parado antes de tentar removê-lo.
+docker images lista todas as imagens Docker disponíveis localmente.
+Para remover uma imagem local, usa-se docker rmi, seguido do ID da imagem.
+docker commit cria uma nova imagem a partir das alterações feitas em um container.
+O Docker permite a criação de redes para conectar containers. O comando docker network é usado para gerenciar essas redes.
+docker stop c14b: para o docker que está ativo
+docker exec: Este comando permite que você execute um comando em um contêiner que já está em execução.
+docker run -dit ubuntu sleep 1d: inicia docker ubuntu e estárá dormindo por um dia
+docker exec -it upbeat_euler top: TOP mostra os processos rodando dentro do docker
+docker pause upbeat_euler: pausa o container do nome indormado
+docker unpause upbeat_euler: despausa o container com base no nome
+docker stop upbeat_euler: sai do container, parando ele também
+docker start -ai
+docker port: mostra as portas mapeadas do container caso tenha
+
+OBS.: Caso o terminal trave, digite CTRL + Q e CTRL + P.
+
+FLAGS:
+-d: detached mode. Isso faz com que o contêiner seja executado em segundo plano, liberando o terminal para outros comandos.
+-i: interactive mode. Isso permite que você interaja com o contêiner, mantendo a entrada padrão aberta.
+-t: tty. Isso aloca um terminal virtual, permitindo uma interface mais interativa, como se você estivesse usando um terminal real.
+-a: all. mostra todos os containers -> docker ps -a mostra todos os containers mas caso não use o -a, será mostrado somente os containers em execução
+-P: docker irá Expor todas as portas especificadas no Dockerfile com a instrução EXPOSE para a máquina host. Atribuir aleatoriamente uma porta disponível do host para cada porta exposta do contêiner.
+-p: realiza o procedimenot da flag -P mas manualmente você indicará para qual porta o container apontará. ex: docker run -p 5000:80 -d dockersamples/static-site
+
+OPERADORES:
+| -> O operador pipe (|) é utilizado para redirecionar a saída do comando anterior como entrada para o próximo comando.
+
+pause: congela o container, todos os processos que estão rodando nele serão antido e parados
+stop: reinicia o container junto com todos os processos, não havendo mais após o stpo
+
+sudo service docker status: verifica os status do docker e serviços antes de iniciar
+caso não esteja rodando, usar o -> sudo service docker start
+
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+configurações de rede do docker
+dockersamples/static-site container do docker naão oficial
+
+configurando portas de rede do docker, container acima utiliza a porta 80
+
+
+CONTINUAR NA AULA 18 8:19
+https://youtu.be/IBlAvnh-hts?list=PLViOsriojeLrdw5VByn96gphHFxqH3O_N
