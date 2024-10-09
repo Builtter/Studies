@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const bubble = (v) => {
+            let ordenado = false;
+            while (!ordenado) {
+                ordenado = true;
+                for (let i = 1; i < v.length; i++) {
+                    if (v[i - 1] > v[i]) {
+                        const aux = v[i];
+                        v[i] = v[i - 1];
+                        v[i - 1] = aux;
+                        ordenado = false;
+                    }
+                }
+            }
+            const valores = [3,1,7,8,4];
+            console.log(valores);
+            bubble(valores);
+            console.log(valores);
+        };
+    </script>
+</body>
+</html>
