@@ -84,3 +84,17 @@ configurando portas de rede do docker, container acima utiliza a porta 80
 
 CONTINUAR NA AULA 18 8:19
 https://youtu.be/IBlAvnh-hts?list=PLViOsriojeLrdw5VByn96gphHFxqH3O_N
+
+parando um container
+docker stop -t 0 eloquent_villani
+esse comando vai parar seu container completamente
+
+docker run -P  -d dockersamples/static-site
+esse comando inicia o dicker -P para criar uma porta que aponte para a porta da imagem docker -d para destravar o terminal por essa imagem trava o terminal assim que iniciada
+
+docker run -p 5000:80 -d dockersamples/static-site
+dessa forma a porta que será utilizada para esse container criado será a  5000 que aponta para a porta 80 interna do docker
+
+docker run -p 80:80 -d -e AUTHOR="Diego" dockersamples/static-site
+direcionando para a porta 80 do pc para 80 do docker, -e acessa a sessão de variáveis do docker e passamos o nome de para o AUTHOR que é a variável que existe nesse containter
+
