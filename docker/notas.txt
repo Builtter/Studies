@@ -65,6 +65,8 @@ FLAGS:
 -a: all. mostra todos os containers -> docker ps -a mostra todos os containers mas caso não use o -a, será mostrado somente os containers em execução
 -P: docker irá Expor todas as portas especificadas no Dockerfile com a instrução EXPOSE para a máquina host. Atribuir aleatoriamente uma porta disponível do host para cada porta exposta do contêiner.
 -p: realiza o procedimenot da flag -P mas manualmente você indicará para qual porta o container apontará. ex: docker run -p 5000:80 -d dockersamples/static-site
+-y: usada para indicar que o usuário deseja confirmar automaticamente todas as ações que exigem uma confirmação
+-X: Comando docker é usada para habilitar o modo de depuração (debug) do Docker. Irá exibir informações detalhadas sobre as operações que estão sendo executadas, incluindo erros e avisos.
 
 OPERADORES:
 | -> O operador pipe (|) é utilizado para redirecionar a saída do comando anterior como entrada para o próximo comando.
@@ -98,3 +100,27 @@ dessa forma a porta que será utilizada para esse container criado será a  5000
 docker run -p 80:80 -d -e AUTHOR="Diego" dockersamples/static-site
 direcionando para a porta 80 do pc para 80 do docker, -e acessa a sessão de variáveis do docker e passamos o nome de para o AUTHOR que é a variável que existe nesse containter
 
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+Aula 19
+
+ docker history dockersamples/static-sie
+ Assim verificamos o histórico de uma imagem docker
+
+ dentro do docker ubundu depois de inicializado
+ docker run -it ubuntu
+ inicializa ubuntu com modo interativo e terminal virutual
+
+ apt update
+ atualiza os pacotes dentro do container caso tenham
+
+ apt install curl vim iputils-ping -y
+ instalando curl vim e iputils-ping confirmando todos questionarios caso tenham durante a instalação
+
+docker commit quirky_sinoussi ubuntu-potencializado
+nesse comando estaremos criando uma nova imagem com base em outra imagem, todas as alterações que foram feitas nesse container tomado com base serão replicadas para o novo container
+
+
+docker container prune
+remove todos os containers parados
+
+    
