@@ -67,6 +67,11 @@ FLAGS:
 -p: realiza o procedimenot da flag -P mas manualmente você indicará para qual porta o container apontará. ex: docker run -p 5000:80 -d dockersamples/static-site
 -y: usada para indicar que o usuário deseja confirmar automaticamente todas as ações que exigem uma confirmação
 -X: Comando docker é usada para habilitar o modo de depuração (debug) do Docker. Irá exibir informações detalhadas sobre as operações que estão sendo executadas, incluindo erros e avisos.
+-a: All
+
+ps: Lista containers que estão em execução no momento
+ls: Listra aquivos no diretório atual
+
 
 OPERADORES:
 | -> O operador pipe (|) é utilizado para redirecionar a saída do comando anterior como entrada para o próximo comando.
@@ -116,11 +121,21 @@ Aula 19
  apt install curl vim iputils-ping -y
  instalando curl vim e iputils-ping confirmando todos questionarios caso tenham durante a instalação
 
-docker commit quirky_sinoussi ubuntu-potencializado
-nesse comando estaremos criando uma nova imagem com base em outra imagem, todas as alterações que foram feitas nesse container tomado com base serão replicadas para o novo container
+ docker commit quirky_sinoussi ubuntu-potencializado;
+ nesse comando estaremos criando uma nova imagem com base em outra imagem, todas as alterações que foram feitas nesse container tomado com base serão replicadas para o novo container
 
+ docker container prune
+ remove todos os containers parados
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+Aula 20
+ 
+ docker ps -a
+ lista todos os container em execução e todos os que não estão em execução no momento da listagem
 
-docker container prune
-remove todos os containers parados
+ touch Doackerfile
+ cria um documento chamado docker file, esse documento será responsável pelas configurações da imagem do docker
+ caso tenha mais de uma imagem para trabalhar dentro do sistema, poderá ser criado um documento nome.Dockerfile
 
+docker run -it -p 8080:8080  minha-app-python:v1
+rodando contaier e especificando porta 
     
