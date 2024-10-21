@@ -139,3 +139,11 @@ Aula 20
 docker run -it -p 8080:8080  minha-app-python:v1
 rodando contaier e especificando porta 
     
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+Aula 21
+otimização do dockker
+
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+Aula 22
+Fazendo Push de Imagens para o Docker Hub
+https://youtu.be/xFmhLlqPi50?list=PLViOsriojeLrdw5VByn96gphHFxqH3O_N
