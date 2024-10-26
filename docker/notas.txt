@@ -147,3 +147,13 @@ otimização do dockker
 Aula 22
 Fazendo Push de Imagens para o Docker Hub
 https://youtu.be/xFmhLlqPi50?list=PLViOsriojeLrdw5VByn96gphHFxqH3O_N
+
+docker container prune -f
+remove todos os containers do docker independente do status dockersamples
+
+docker rmi -f $(docker images -q)
+Isso irá remover todas as imagens do Docker, incluindo as que estão sendo usadas por containers.
+
+docker system prune -af
+remover todas as imagens, containers, volumes e redes que não estão sendo usados.
+
