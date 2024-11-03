@@ -32,7 +32,7 @@
 
     </main>
     <footer class="rodape">
-        TEI GAMES <?= date('Y');?>
+        FORGING SITES <?= date('Y');?>
     </footer>
 
 </body>
