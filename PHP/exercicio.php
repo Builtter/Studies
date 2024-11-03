@@ -17,7 +17,7 @@
     </header>
 
     <nav class="navegacao">
-    <a href=<?= "/{$_GET['dir']}/{$_GET['file']}.php" ?> 
+        <a href=<?= "/{$_GET['dir']}/{$_GET['file']}.php" ?>
             class="verde">Sem formatação</a>
         <a href="index.php" class="vermelho">Voltar</a>
     </nav>
@@ -26,17 +26,17 @@
         <div class="conteudo">
 
             <?php
-                // include($_GET['dir'] . "/" . $_GET['file'] . "teste.php"); //não funfou
-                // include("{$_GET['dir']}/{$_GET['file']}.php");//não funfou tmb
-                // include(__DIR__ . "/{$_GET['dir']}/{$_GET['file']}.php");//não tmb
-                // include('teste/teste.php'); // funfa
-                include(__DIR__ . "/{$_GET['dir']}/{$_GET['file']}.php");
+            // include($_GET['dir'] . "/" . $_GET['file'] . "teste.php"); //não funfou
+            // include("{$_GET['dir']}/{$_GET['file']}.php");//não funfou tmb
+            // include(__DIR__ . "/{$_GET['dir']}/{$_GET['file']}.php");//não tmb
+            // include('teste/teste.php'); // funfa
+            include(__DIR__ . "/{$_GET['dir']}/{$_GET['file']}.php");
             ?>
 
         </div>
     </main>
     <footer class="rodape">
-        TEI GAMES <?= date('Y');?>
+        TEI GAMES <?= date('Y'); ?>
     </footer>
 
 </body>
