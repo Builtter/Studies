@@ -34,6 +34,7 @@
                     <ul>
                         <li><a href="exercicio.php?dir=tipos&file=int">Tipo Interiro</a></li>
                         <li><a href="exercicio.php?dir=tipos&file=float">Tipo Float</a></li>
+                        <li><a href="exercicio.php?dir=tipos&file=aritmeticas">Op. Aritmeticas</a></li>
                     </ul>
                 </div>
             </nav>
