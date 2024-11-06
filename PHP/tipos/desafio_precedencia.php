@@ -1,4 +1,4 @@
-<div class="titulo">Desafios</div>
+<div class="titulo">Desafio Precedência</div>
 
 <?php
 
