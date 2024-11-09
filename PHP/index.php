@@ -51,6 +51,7 @@
                         <li><a href="exercicio.php?dir=variaveis&file=interpolacao">Interpolação</a></li>
                         <li><a href="exercicio.php?dir=variaveis&file=variaveis_variaveis">Variaveis Variaveis</a></li>
                         <li><a href="exercicio.php?dir=variaveis&file=desafio_variaveis">Desafio Variaveis</a></li>
+                        <li><a href="exercicio.php?dir=variaveis&file=valor_referencia">Valor Vs Referencia</a></li>
                     </ul>
                 </div>
             </nav>
