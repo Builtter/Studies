@@ -181,3 +181,31 @@ body {
 .modulo.rosa>h3 {
     background-color: #5a0a49;
 }
+
+.btn-box {
+    padding: 10px 0px 10px 0px;
+    height: 55px;
+}
+.btn-box button{
+    background-color: #536ec7;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn-box button:hover{
+    background-color: #183239;
+}
+.btn-flex-position{
+    display: flex;
+    justify-content: space-evenly;
+}
+.links button a{
+    text-decoration: none;
+    color: #fff;
+}
+.btn button{
+    border-radius: 5px;
+    height: 45px;
+    width: 140px;
+}

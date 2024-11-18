@@ -19,3 +19,12 @@ echo '<br>' . PHP_VERSION, '<br>';
 echo '<br> Linha: ' . __LINE__ . '<br>';
 echo '<br> Arquivo: ' . __FILE__ . '<br>';
 echo '<br> Diretório: ' . __DIR__ . '<br>';
+?>
+
+<div class="btn btn-box links btn-flex-position">
+    <button><a href="https://www.php.net/manual/pt_BR/language.variables.php" target="_blank" rel="noopener noreferrer">Variáveis </a></button>
+    <button><a href="https://www.php.net/manual/pt_BR/language.variables.variable.php" target="_blank" rel="noopener noreferrer">Variáveis variáveis </a></button>
+    <button><a href="https://www.php.net/manual/pt_BR/language.types.string.php#language.types.string.parsing" target="_blank" rel="noopener noreferrer">Interpolação de strings </a></button>
+    <button><a href="https://www.php.net/manual/pt_BR/function.constant.php" target="_blank" rel="noopener noreferrer">Constant </a></button>
+    <button><a href="https://www.php.net/manual/pt_BR/language.references.pass.php" target="_blank" rel="noopener noreferrer">Passagem por referência </a></button>
+</div>
