@@ -23,6 +23,7 @@
                     <h3>04. Controle</h3>
                     <ul>
                         <li><a href="exercicio.php?dir=controle&file=if_else">If Else</a></li>
+                        <li><a href="exercicio.php?dir=controle&file=operadores_relacionais">Op. Relacionais</a></li>
 
                     </ul>
                 </div>
