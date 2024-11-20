@@ -186,6 +186,7 @@ body {
     padding: 10px 0px 10px 0px;
     height: 55px;
 }
+
 .btn-box button{
     background-color: #536ec7;
     border-radius: 5px;
@@ -193,25 +194,31 @@ body {
     font-weight: bold;
     cursor: pointer;
 }
+
 .btn-box button:hover{
     background-color: #183239;
 }
+
 .btn-flex-position{
     display: flex;
     justify-content: space-evenly;
 }
+
 .links button a{
     text-decoration: none;
     color: #fff;
 }
+
 .btn button{
     border-radius: 5px;
     height: 45px;
     width: 140px;
 }
+
 p.divisao {
     font-weight: bold;
 }
+
 hr{
     margin-top: -20px;
 }
