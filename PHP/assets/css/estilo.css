@@ -209,3 +209,9 @@ body {
     height: 45px;
     width: 140px;
 }
+p.divisao {
+    font-weight: bold;
+}
+hr{
+    margin-top: -20px;
+}
