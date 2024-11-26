@@ -28,6 +28,7 @@
                         <li><a href="exercicio.php?dir=controle&file=operadores_logicos">Operadores Lógicos</a></li>
                         <li><a href="exercicio.php?dir=controle&file=operadores_logicos_desafio">Desafio Operadores Lógicos</a></li>
                         <li><a href="exercicio.php?dir=controle&file=operador_ternario">Operador Ternário</a></li>
+                        <li><a href="exercicio.php?dir=controle&file=switch">Switch Case</a></li>
 
                     </ul>
                 </div>
