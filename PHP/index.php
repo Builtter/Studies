@@ -23,6 +23,7 @@
                     <h3>05. Arrays</h3>
                     <ul>
                         <li><a href="exercicio.php?dir=array&file=basico">Array Básico</a></li>
+                        <li><a href="exercicio.php?dir=array&file=mapa_array">Mapa Array</a></li>
 
                     </ul>
                 </div>
