@@ -19,6 +19,13 @@
 
         <div class="conteudo">
             <nav class="modulos">
+                <div class="modulo laranja">
+                    <h3>05. Arrays</h3>
+                    <ul>
+                        <li><a href="exercicio.php?dir=array&file=basico">Array Básico</a></li>
+
+                    </ul>
+                </div>
                 <div class="modulo roxo">
                     <h3>04. Controle</h3>
                     <ul>
