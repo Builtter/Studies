@@ -29,7 +29,8 @@
                         <li><a href="exercicio.php?dir=array&file=operacoes">Operações</a></li>
                         <li><a href="exercicio.php?dir=array&file=desafio_sorteio">Desfio Sorteio</a></li>
                         <li><a href="exercicio.php?dir=array&file=multi">Multidimensional</a></li>
-                    
+                        <li><a href="exercicio.php?dir=array&file=array_constantes">Arrays Constantes</a></li>
+
                     </ul>
                 </div>
                 <div class="modulo roxo">
