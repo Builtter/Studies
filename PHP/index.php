@@ -31,6 +31,7 @@
                         <li><a href="exercicio.php?dir=array&file=multi">Multidimensional</a></li>
                         <li><a href="exercicio.php?dir=array&file=array_constantes">Arrays Constantes</a></li>
                         <li><a href="exercicio.php?dir=array&file=get">$_GET</a></li>
+                        <li><a href="exercicio.php?dir=array&file=post">$_POST</a></li>
 
                     </ul>
                 </div>
