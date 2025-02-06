@@ -20,6 +20,6 @@ if (i == 3)
 execve("/usr/bin/xeyes", argv, envp);
 }
 else // Processo pai
-waitpid(pid, NULL, 0)
+waitpid(pid, NULL, 0);
 }
 }
