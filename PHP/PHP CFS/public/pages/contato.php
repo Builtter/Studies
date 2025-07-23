@@ -1,5 +1,7 @@
 <h2>Página Contato</h2>
 
+<?= get('message')?>
+
 <form action="/pages/forms/contato.php" method="post" role="form">
     <legend>Contato</legend>
 

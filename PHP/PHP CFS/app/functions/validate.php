@@ -22,3 +22,20 @@ function validate(array $fields){
     }
     return (object) $validate;
 }
+
+/**
+ * Verifica se todos os campos do formulario foram preenchidos.
+ * 
+ * @return boolean Se todos os campos do formulario foram preenchidos.
+ */
+function isEmpty(){
+    $request = request();
+    $empty = false;
+    
+    foreach (request() as $key => $value) {
+        if(empty($request[$key])){
+            $empty = true;
+        }
+    }
+    return $empty;
+}
