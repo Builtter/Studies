@@ -22,3 +22,23 @@ function request (){
     }
     return $_GET;
 }
+
+/**
+ * Redirects the user to a specified page.
+ *
+ * @param string $page The name of the page to redirect to.
+ * @return void
+ */
+
+function redirect ($page) {
+    return header("location:/?page={$page}");
+}
+
+/**
+ * Redirects the user to the home page.
+ *
+ * @return void
+ */
+function redirectToHome () {
+    return header("location:/");
+}
