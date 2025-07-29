@@ -7,7 +7,7 @@
  * @param array $data
  *   Um array com as informa es do email a ser enviado.
  *   As chaves do array devem ser:
- *   - quem: Quem est  enviando o email.
+ *   - quem: Quem esta  enviando o email.
  *   - para: Para quem o email est  sendo enviado.
  *   - assunto: O assunto do email.
  *   - mensagem: A mensagem do email.

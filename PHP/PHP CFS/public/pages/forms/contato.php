@@ -7,14 +7,12 @@ if(isEmpty()) {
     return redirect('contato');
 }
 
-$validate = [
+$validate = validate([
     'name' => 's',
     'email' => 'e',
     'subject' => 's',
     'message' => 's'
-];
-
-$validate = validate($validate);
+]);
 
 $data = [
     "quem" => $validate->email,
