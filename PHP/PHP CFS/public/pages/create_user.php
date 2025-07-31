@@ -1,5 +1,7 @@
+<?= get('message');?>
+
 <!-- BS3 Form -->
-<form action="" method="post" class="form-horizontal" role="form">
+<form action="/pages/forms/create_user.php" method="post" class="form-horizontal" role="form">
     <legend></legend>
     <div class="form-group">
         <label for="name" class="col-sm-2 control-label">Name</label>
