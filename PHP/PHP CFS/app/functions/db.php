@@ -31,6 +31,14 @@ function create($table, $fields) {
     return $pdo;
 }
 
+function all($table){
+    $pdo = connect();
+    $sql = "SELECT * FROM {$table}";
+    $query = $pdo->query($sql);
+    $query->execute();
+    return $query->fetchAll(PDO::FETCH_ASSOC);
+}
+
 function update() {
     
 }
