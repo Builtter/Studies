@@ -5,7 +5,7 @@
 
 <div class="container">
     <!-- BS3 Form -->
-    <form action="/pages/forms/edit_user.php" method="post" class="form-horizontal" role="form">
+    <form action="/pages/forms/update_user.php" method="post" class="form-horizontal" role="form">
         <input type="hidden" name="id" value="<?= $user->ID_USER; ?>">
         <legend>Alterar Usuário</legend>
         <div class="form-group">
