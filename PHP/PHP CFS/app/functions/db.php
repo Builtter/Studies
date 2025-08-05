@@ -1,8 +1,9 @@
 <?php
 
-function connect() {
+function connect()
+{
     try {
-        $pdo = new \PDO('mysql:host=localhost:3306;dbname=simp_db;charset=utf8','root','');
+        $pdo = new \PDO('mysql:host=localhost:3306;dbname=simp_db;charset=utf8', 'root', '');
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
         return $pdo;
@@ -10,14 +11,14 @@ function connect() {
         echo 'Erro de conexão: ' . $e->getMessage();
         exit;
     }
-    
 }
 
-function create($table, $fields) {
-    if(!is_array($fields)) {
+function create($table, $fields)
+{
+    if (!is_array($fields)) {
         $fields = (array) $fields;
     }
-    
+
     $sql = "INSERT INTO {$table} (" . implode(',', array_keys($fields)) . ") VALUES (:" . implode(', :', array_keys($fields)) . ")";
 
     $pdo = connect();
@@ -26,12 +27,13 @@ function create($table, $fields) {
     foreach ($fields as $key => $value) {
         $insert->bindValue(":{$key}", $value);
     }
-    
+
     $insert->execute();
     return $pdo;
 }
 
-function all($table){
+function all($table)
+{
     $pdo = connect();
     $sql = "SELECT * FROM {$table}";
     $query = $pdo->query($sql);
@@ -39,29 +41,20 @@ function all($table){
     return $query->fetchAll(PDO::FETCH_ASSOC);
 }
 
-function update() {
-    
+function update() {}
+
+function find($table, $field, $value)
+{
+    $value = filter_var($value, FILTER_SANITIZE_NUMBER_INT);
+
+    $pdo = connect();
+    $sql = "SELECT * FROM {$table} WHERE {$field} = :{$field}";
+    $find = $pdo->prepare($sql);
+    $find->bindValue(":{$field}", $value);
+    $find->execute();
+    return $find->fetch();
 }
 
-function find() {
-    
-}
+function delete() {}
 
-function delete() {
-    
-}
-
-function desconect() {
-    
-}
-
-
-
-
-
-
-
-
-
-
-?>
+function desconect() {}
