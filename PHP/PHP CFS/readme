@@ -1,0 +1,9 @@
+start no servidor php local com
+php -S localhost:8888 -t public
+http://localhost:8888/
+
+banco está rodando na porta
+pelo wamp MySQL:3306
+http://localhost/phpmyadmin
+User: root
+pass: 
