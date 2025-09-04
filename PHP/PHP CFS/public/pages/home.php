@@ -2,6 +2,8 @@
 
 <h2>Página Inicial - Home</h2>
 
+<?php echo get('message'); ?>
+
 <div class="table-responsive">
     <table class="table table-striped table-hover">
         <thead>

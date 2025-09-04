@@ -19,11 +19,10 @@ $atualizado = update('users', $validate, ['ID_USER', $id]);
 
 if($atualizado) {
     flash('message','Atualizado com sucesso!', 'success');
-    redirect('edit_user&id=' . $id);
-
-}else {
-    flash('message','Erro ao Atualizar!');
-    redirect('edit_user&id=' . $id);
+    return redirect('edit_user&id=' . $id);
 }
+
+flash('message','Erro ao Atualizar!');
+redirect('edit_user&id=' . $id);
 
 ?>
