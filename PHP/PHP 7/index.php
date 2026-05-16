@@ -19,7 +19,14 @@
 
         <div class="conteudo">
             <nav class="modulos">
-            <div class="modulo verde-dif">
+                <div class="modulo azul-claro">
+                    <h3>07. Funções</h3>
+                    <ul>
+                        <li><a href="exercicio.php?dir=funcoes&file=escopo">Função & Escopo</a></li>
+
+                    </ul>
+                </div>
+                <div class="modulo verde-dif">
                     <h3>06. Repetições</h3>
                     <ul>
                         <li><a href="exercicio.php?dir=repeticoes&file=for">Laço For</a></li>
